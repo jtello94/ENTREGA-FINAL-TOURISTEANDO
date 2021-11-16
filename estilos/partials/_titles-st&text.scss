@@ -1,0 +1,168 @@
+$rojo: #d95f5f;
+$azul: #365359;
+$blanco: #f2f2f0;
+
+@import "./mediaqueries";
+
+.title {
+    font-weight: 500;
+    font-size: 5rem;
+    color: $blanco;
+    margin: 1rem 0rem 1rem 0;
+    line-height: 7rem;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 2rem;
+    color: $blanco;
+    margin: 4rem 0rem 1rem 0;
+}
+
+.subtitle2 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: $blanco;
+    margin: 0rem 0rem 5rem 0;
+}
+
+.text1 {
+    font-size: 1.5rem;
+    color: $blanco;
+    font-weight: 200;
+    display: flex;
+    line-height: 2rem;
+    padding-top: 1.5rem;
+}
+
+.index-h2 {
+    width: 70%;
+
+    @include laptop {
+        width: 100%;
+    }
+}
+
+.card {
+    &-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $azul;
+    }
+
+    &-text {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        background-color: $azul;
+        border-color: $azul;
+    }
+}
+
+//----------- ESTILOS PARA LOS TITULOS DE LAS PAGINAS DE TOURS ------//
+
+
+.tours__titles {
+    width: 73%;
+    padding-left: 8rem;
+
+    @include laptop {
+        width: 100%;
+        padding-left: .5rem;
+    }
+
+    &--h1 {
+        font-weight: 500;
+        font-size: 5rem;
+        color: $blanco;
+        padding-left: 2rem;
+        margin: 2rem 0 0 0;
+    }
+
+    &--h2 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $blanco;
+        margin: 2rem 0rem 2rem 0rem;
+        padding-left: 2rem;
+    }
+}
+
+.tours__titlesDerecha {
+    width: 60%;
+    padding-left: 8rem;
+
+    @include laptop {
+        width: 100%;
+        padding-left: .5rem;
+    }
+
+    &--h1 {
+        font-weight: 500;
+        font-size: 5rem;
+        color: $blanco;
+        padding-left: 2rem;
+        margin: 2rem 0 0 0;
+    }
+
+    &--h2 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $blanco;
+        margin: 2rem 0rem 2rem 0rem;
+        padding: 0 5rem 0 2rem;
+    }
+}
+
+.tours__text {
+    font-size: 1.3rem;
+    margin: 2rem 0rem 2rem 0rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding-left: 2rem;
+
+    @include tablet {
+        line-height: 3rem;
+    }
+
+    &--h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        color: $blanco;
+        background-color: $azul;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    &--h4 {
+        color: $blanco;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 2rem;
+    }
+
+
+    &--p {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        color: $blanco;
+    }
+
+    & ul {
+        padding-left: 5rem;
+        font-size: 1.3rem;
+        margin: 1rem 1rem 1rem 1rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        color: $blanco;
+    }
+}
+
+hr {
+    color: $blanco;
+}
+
+.tours__img {
+    width: 30%;
+}

@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    height: 8vh;
+    background-color: #f2f2f04f;
+    padding: 0 1rem;
+
+    @include miniTablet {
+        height: 100%;
+    }
+
+    &__txt {
+        color: $blanco;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    &__img {
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+    }
+}

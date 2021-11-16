@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import "./mediaqueries";
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.body {
+    background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(../img/imagen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed;
+
+    &__header {
+        height: 8vh;
+    }
+
+    &__header--navImg {
+        height: 35%;
+        width: 35%;
+    }
+
+    &__header--navItemList {
+        text-decoration: none;
+        color: #243840;
+        font-size: 1.5rem;
+        font-weight: 400;
+        border-bottom: 1px solid transparent;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    &__navegacion--itemLink {
+        text-decoration: none;
+        color: #243840;
+        font-size: 1.5rem;
+        font-weight: 400;
+        border-bottom: 1px solid transparent;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+
+        &:hover {
+            color: #d95f5f;
+            border-bottom: 1px solid #f2f2f0;
+        }
+    }
+
+
+}
+
+//--------- ESTILO DEL NAVBAR -------//
+.navbar {
+    z-index: 100;
+}
+
+
+//------ ESTILO CUERPO DE LA PAGINA GENERAL ------//
+.main {
+    height: 84vh;
+    padding-top: 5rem;
+
+    @include laptop {
+        height: 100%;
+        padding-bottom: 2rem;
+        padding-top: 0;
+    }
+
+    .row {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+}
+
+// ------ ESTILO PARA EL CUERPO DE LAS PAGINAS DE TOURS -------//@at-root
+
+.mainTours {
+    height: 100%;
+    padding: 5rem 0;
+
+    @include laptop {
+        padding-bottom: 2rem;
+        padding-top: 0;
+        margin-top: 5rem;
+    }
+
+    .row {
+        height: 100%;
+    }
+}
+
+.mainContact {
+    height: 84vh;
+    padding: 3rem 0;
+
+    @include laptop {
+        height: 100%;
+    }
+}
+
+.mainNosotros {
+    height: 100%;
+    padding: 5rem 0;
+    margin-top: 5rem;
+
+    @include laptop {
+        padding-bottom: 2rem;
+        padding-top: 0;
+    }
+
+    .row {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}

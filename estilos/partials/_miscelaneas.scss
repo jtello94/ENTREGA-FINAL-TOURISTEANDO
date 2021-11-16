@@ -1,0 +1,154 @@
+.carousel {
+
+    margin: 4rem 2rem 0 2rem;
+    -webkit-transition: 5s;
+    transition: 5s;
+
+    @include laptop {
+        width: 80%;
+    }
+
+    @include tablet {
+        width: 90%;
+    }
+}
+
+.carousel-item__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 75%;
+    margin-top: 4rem;
+}
+
+
+.btnTours {
+    text-decoration: none;
+    color: $blanco;
+    border: 2px solid $rojo;
+    background: $rojo;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.5rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: #365359;
+    }
+}
+
+.tarjetas {
+    margin-top: 5rem;
+}
+
+.vuelos__btn {
+    text-decoration: none;
+    color: $blanco;
+    border: 2px solid $rojo;
+    background: $rojo;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+    line-height: 5rem;
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: #365359;
+    }
+}
+
+.info__link {
+    margin: 2rem 0rem;
+    padding: 0.5rem 0.5rem;
+
+    & a {
+        text-decoration: none;
+        margin-left: .5rem;
+        padding: 0.5rem 0.5rem;
+        color: $blanco;
+        background-color: $azul;
+        transition: all .5s ease;
+    }
+
+    & a:hover {
+        color: $blanco;
+        background-color: $rojo;
+        transition: all .5s ease-out;
+    }
+}
+
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    animation: tracking-in-expand 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.swing-in-top-fwd {
+    -webkit-animation: swing-in-top-fwd 5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-top-fwd 5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@-webkit-keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+}
